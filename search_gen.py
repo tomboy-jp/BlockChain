@@ -1,6 +1,5 @@
 import json
 import hashlib
-import time
 from datetime import datetime
 
 def calculate_hash(block):
@@ -31,7 +30,7 @@ def mine(args):
 args = {
     'host': "http://localhost:114514",
     'data': "Ground Zero",
-    'previous_hash': hashlib.sha256(bytes('0', 'utf8')).hexdigest()
+    'previous_hash': hashlib.sha256(bytes("0", "utf8")).hexdigest()
     }
 
 print(mine(args))
